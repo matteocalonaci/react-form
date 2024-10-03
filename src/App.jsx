@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
 import CardForm from "./components/CardForm";
+import TitleCount from "./components/TitleCount";
 
 function App() {
  const [cities, setCities] = useState ([
@@ -43,9 +44,7 @@ function App() {
 
   return (
     <>
-    <CardForm addCity={addCity}></CardForm>
-
-<div className="flex flex-wrap justify-center">
+<h1 className="text-center font-bold text-4xl text-fuchsia-700">CITIES</h1><div className="flex flex-wrap justify-center">
   {cities
   // .filter((city) => city.isVisitated) //-> aggiungo un filtro per mostrare in pagina solo le città visitate
   .map((city)=> (
@@ -57,7 +56,10 @@ function App() {
     isVisitated={city.isVisitated}
   >
   </Card>))}
-
+</div>
+<div className="flex flex-wrap justify-evenly p-5 bg-fuchsia-500 border-2 rounded-2xl">
+  <CardForm addCity={addCity} className="w-1/2"></CardForm>
+  <TitleCount className="w-1/2"></TitleCount>
 </div>
     </>
   );

@@ -49,7 +49,7 @@ function CardForm({ addCity }) {
     </div>
     
 
-        <button type="submit" className="mt-5 p-2 bg-red-600 rounded-2xl">
+        <button type="submit" className="mt-5 p-2 rounded-2xl bg-pink-800 border-2">
           Add Card
         </button>
       </form>
