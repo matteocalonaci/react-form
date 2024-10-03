@@ -57,9 +57,14 @@ function App() {
   >
   </Card>))}
 </div>
-<div className="flex flex-wrap justify-evenly p-5 bg-fuchsia-500 border-2 rounded-2xl">
+<div className="p-5 bg-fuchsia-500 border-2 rounded-2xl">
+<h2 className="text-4xl"><b>Add New City</b></h2>  
+<hr className=" mb-10 mt-2" />
+<div className="flex flex-wrap justify-evenly">
   <CardForm addCity={addCity} className="w-1/2"></CardForm>
   <TitleCount className="w-1/2"></TitleCount>
+
+  </div>
 </div>
     </>
   );

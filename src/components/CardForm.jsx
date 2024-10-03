@@ -45,7 +45,7 @@ function CardForm({ addCity }) {
     </div>
     <div>
     <label><b>Is visitated?</b></label>
-    <input type="checkbox" name="isVisited"  className="mx-2" checked={formData.isVisitated} onChange={handleInputChange}></input>
+    <input type="checkbox" name="isVisited"  className="mx-4" checked={formData.isVisitated} onChange={handleInputChange}></input>
     </div>
     
 
