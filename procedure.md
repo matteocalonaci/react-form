@@ -1,4 +1,4 @@
-Importo l' `useState`che mi consente di aggiungere uno stato ai .
+Importo l' `useState`che mi consente di aggiungere uno stato al componente.
 Definisco `CardForm` che he accetta una prop `addCity`. Questa prop è una funzione che verrà chiamata quando il modulo viene inviato.
 Utilizzo `useState` per inizializzare `formData` che ha quattro proprietà: 
 - title, 
